@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>에약문의 orginal</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Dosis|Noto+Sans+KR:300|Noto+Serif+KR|Playfair+Display&display=swap"
+        rel="stylesheet">
+    <!--fontawesom-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--daybreaker-->
+    <script src="air-datepicker/datepicker.min.js"></script>
+    <!-- 언어설정 -->
+    <script src="air-datepicker/i18n/datepicker.en.js"></script>
+    <link rel="stylesheet" href="air-datepicker/datepicker.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/date.js"></script>
+    <style>
+        /*sub01 600x700*/
+        /*sub01 600x700*/
+
+        #intro {
+            position: relative;
+        }
+
+        #intro .sub-visul {
+            width: 100%;
+            height: 300px;
+            background-image: url('images/visual2.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        #intro .sub-visul>h1 {
+            text-align: center;
+            position: absolute;
+            font-size: 28px;
+            font-weight: lighter;
+            left: 50%;
+            top: 6.4%;
+            transform: translateX(-50%);
+            color: #fff;
+            line-height: 1.3em;
+        }
+
+        #intro .sub-visul>h1 span {
+            font-size: 55px;
+            font-family: 'Dosis', sans-serif;
+            font-weight: lighter;
+            letter-spacing: -3px;
+
+        }
+
+        #sub04 .title {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        #sub04 .title p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+
+
+        /*line */
+        #sub05-2 #intro .title {
+            margin-top: 100px;
+        }
+
+        /*예약내용*/
+        #sub04 .reservation {
+            border: 1px solid #eeb365;
+
+            height: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-left:25px;
+            margin-bottom: 50px;
+            
+                
+
+        }
+
+      
+
+        #sub04 .reservation h2 {
+            text-align: center;
+
+            font-size: 35px;
+            border-bottom: 2px solid #ccc;
+            width: 280px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding-bottom: 8px;
+        
+        }
+        #sub04 .reservation h3{
+            margin-bottom: 18px;
+            margin-top: 30px;
+           
+        }
+
+        #sub04 .reservation p {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 8px;
+
+        }
+
+       
+    
+        .basic{
+          width: 100%;
+           height:  400px;
+        
+      
+           
+                   
+         }
+
+        /*left*/
+        #sub04 .left, #sub04 .right{
+            width: 50%;
+            height: 100%;
+        
+          float: left;
+            
+        }
+     
+        #sub04 .reservation .left ul li p,  #sub04 .reservation .right ul li p{
+            text-align: left;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        #sub04 .reservation .left ul li div{
+            display:inline-block;
+            margin-right: 20px;
+        
+        
+        }
+        #sub04 .reservation .right ul li div{
+            margin-right: 0;
+        }
+       
+        #sub04 .left #my-calendar{
+          padding: 10px 20px;
+          font-size: 16px;
+          
+        }
+        #sub04 .left .time,  #sub04 .left .name,#sub04 .right .number, 
+         #sub04 .right .tel{
+            margin-bottom: 0;
+            padding: 10px 20px;
+            font-size: 16px;
+             
+        }  
+        #sub04 .right{
+           padding-left: 40px;
+          
+        }
+       
+        /* #sub04 .left #check{ font-size: 30px;} */
+        #sub04 .name{ 
+         
+        width: 230%;
+       }
+
+       /*right*/
+      
+      
+        #sub04 .basic{
+            overflow: hidden;
+        }
+        select{
+            vertical-align: middle;
+        }
+      
+        #sub04 .right .number,  #sub04 .right .tel{ 
+          
+        width:530px; }
+    
+        /* #sub04 .basic{
+            width: 500px;
+            border: 1px solid #000;
+        } */
+        /*daybreaker*/
+        /* 요일명 */
+        .datepicker--day-name {
+            color: brown;
+        }
+
+        /* 오늘 날짜 */
+        .datepicker--cell.-current- {
+            color: brown;
+        }
+
+        .datepicker--cell.-current-.-selected- {
+            background-color: brown;
+            color: #fff;
+        }
+
+        /* 선택한 날짜 */
+        .datepicker--cell.-selected- {
+            background-color: brown;
+            color: #fff;
+        }
+
+        .datepicker--cell.-selected-:hover {
+            background-color: brown;
+            color: #fff;
+        }
+
+        /*inquere*/
+        #sub04 .visit .memo{
+             height:180px;
+            width: 100%;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        #sub04 .visit{
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+        #sub04 .inform .button{
+            text-align: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        #sub04 .inform .button input{
+            padding: 8px 15px; 
+            margin-right: 10px;
+            border: 2px solid #eeb365;
+             background: #fff;
+             border-radius: 6px;
+             width: 100px;
+        }
+        #sub04 .inform .button input:hover{
+            background: #eeb365;
+            color:#fff;
+        }
+        
+    </style>
+</head>
+
+<body id="sub04">
+    <header>
+        <div class="container">
+            <h1><a href="index.html"><img src="images/Artboard 1.png" alt=""></a></h1>
+            <div class="blog">
+                <a href="#"><img src="images/Asset5.svg" alt=""></a>
+                <a href="#"><img src="images/Asset6-1.svg" alt=""></a>
+                <a href="#"><img src="images/Asset7.svg" alt=""></a>
+
+            </div>
+            <nav id="main-menu">
+                <ul class="depth1">
+                    <li><a href="sub01-1.html">ABOUT</a>
+                        <ul class="depth2">
+                            <li><a href="sub01-1.html">웨딩홀 소개</a></li>
+                            <li><a href="sub01-2.html">오시는길</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="sub02-1.html">WEDDING HALL</a>
+                        <ul class="depth2">
+                            <li><a href="sub02-1.html">그랜드홀</a></li>
+                            <li><a href="sub02-2.html">디럭스홀</a></li>
+                            <li><a href="sub02-3.html">스위트홀</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="sub03.html">BANQUET</a>
+                        <ul class="depth2">
+                            <li><a href="sub03.html">연회장</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li><a href="sub04.html">RESERVATION</a>
+
+                    </li>
+                    <li><a href="sub05-1.html">COMMUNITY</a>
+                        <ul class="depth2">
+                            <li><a href="sub05-1.html">공지사항</a></li>
+                            <li><a href="sub05-2.html">후기</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="sub-visul">
+            <h1>
+                예약하기<br> <span>Reservation</span></h1>
+
+        </div>
+        <!--나중에 넣을곳 -->
+        <div class="container">
+            <div class="title">
+                <img src="images/sub04-line.png" alt="">
+                <p>예식관련 문의사항을 적어주시면 신속하게 답변드리겠습니다.<br>
+                    예약실 09:00~21:00 (평일,주말) Tel : 02-2662-8300</p>
+
+            </div>
+            <div class="reservation">
+                <h2>예약.문의 입력</h2>
+                <p style="margin-bottom: 30px">예식관련 문의사항을 적어주세요.</p>
+                <div class="inform">
+                    <div class="basic">
+                        <h3>01.기본정보를 입력해 주세요</h3>
+                        <div class="left">
+                            <ul>
+                                <li><p>희망예식일자</p>
+                                    <div>
+                                        <input id="my-calendar" type="text" class="datepicker-here" data-language="ko">
+                                    </div>
+                                      <div>
+                                       <select name="time" class="time">
+                                           <option value="11시">11시</option>
+                                           <option value="12시">12시</option>
+                                           <option value="13시">13시</option>
+                                           <option value="14시">14시</option>
+                                           <option value="15시">15시</option>
+                                       </select>
+                                    </div>
+                                      <div>
+                                       <select name="minutes" class="time">
+                                           <option value="00분">00분</option>
+                                           <option value="30분">30분</option>
+                                          
+                                       </select>
+                                    </div>
+                                    <div><input type="checkbox" id="check">미정</div>
+                                </li>
+                                <li>
+                                        <p>신청자명</p>
+                                    <div >
+                                        <input type="text" id="infor-name"class="name" placeholder="이름을 정확히 기재해 주세요.">
+                                    </div>
+                                </li>
+                                <li>
+                                        <p>이메일주소</p>
+                                    <div >
+                                        <input type="email" class="name" placeholder="답변받으실 이메일 주소">
+                                    </div>
+                                </li>
+                            </ul>
+                           
+
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li><p>예상하객수</p>
+                                   
+                                      <div>
+                                       <select name="number" class="number">
+                                           <option value="100~200">100~200</option>
+                                           <option value="200~300">200~300</option>
+                                           <option value="300~400">300~400</option>
+                                         
+                                       </select>
+                                    </div>
+                                     
+                                   
+                                </li>
+                                <li>
+                                    <p>전화번호</p>
+                                    <div >
+                                        <input type="tel" class="tel" placeholder="번호를 정확히 기재해 주세요.">
+                                    </div>
+                                </li>
+                                <li><p>상담방법</p>
+                                   
+                                    <div>
+                                     <select name="number" class="number" style="height:42px;;">
+                                         <option value="전화">전화</option>
+                                         <option value="카카오톡">카카오톡</option>
+                                         <option value="방문">방문</option>
+                                       
+                                     </select>
+                                  </div>
+                                   
+                                 
+                              </li>
+                            </ul>
+                        </div>
+                      
+                    </div>
+                    <div class="visit">
+                        <h3>02.문의사항</h3>
+                        <input type="text" class="memo" >
+                    </div>
+                    <div class="button">
+                        <input type="submit" class="submit" value="보내기">
+                        <input type="reset" class="reset"value="수정하기">
+
+                    </div>
+                </div>
+                        
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="main-footer">
+                <h2><img src="images/Artboard 1.png" style="opacity:0.7" alt=""></h2>
+
+                <a href="#">예약상담</a>
+                <a href="#">오시는길</a>
+
+
+
+            </div>
+
+            <div class="address">
+                <p>주소:대전광역시 서구 만년동 337,338 &nbsp; 대표:박희삼
+                    회사명:VIP 웨딩홀 뷔페 &nbsp; 사업자등록번호: 314-01-38469<br>연락처:Tel : 042-485-1515 </p>
+
+            </div>
+            <p class="copy">Copyright © COFFTIME All rights reserved.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

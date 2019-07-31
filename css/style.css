@@ -1,0 +1,517 @@
+*{ 
+    margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Serif KR', serif;*/}
+ul{
+    list-style-type: none;
+    }
+a{
+    text-decoration: none
+    }
+.container{
+    position: relative;
+    min-width: 900px;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+
+ /* header */
+ header{
+    position: relative;
+    height: 100px;
+    background: rgba(0,0,0,1);
+    font-family: 'Noto Sans', sans-serif; 
+ }
+ header .blog{
+    right:40px;
+    position: absolute;
+    top:15px;
+    }
+header .blog img{
+    float:left;
+    width: 30px;
+    margin-right: 10px;
+}
+ header h1{
+    position: absolute;
+    left:20px;
+    top: -3px;
+    float: left;
+    z-index: 99;
+ }
+ header h1 img{
+     width: 110px;
+ }
+
+
+ /* menu */
+ #main-menu{
+    position: absolute;  
+    right:20px; top:50px; 
+    width: 800px; 
+    z-index: 99;
+    overflow: hidden;
+     
+}
+.depth2{
+    margin-top: 4px;
+    background: #fff;
+    width: 100%;
+    
+   
+}
+
+.depth1>li{
+   float:left;
+   width: 20%;
+   text-align: center;    
+}
+
+#main-menu .depth1 li>a{
+    display:block;    
+    line-height: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color:#fff; 
+   
+}
+#main-menu .depth1 li a:hover{
+
+  color: #eeb365;
+ 
+}
+.depth2{
+   /* display: none; */
+   opacity: 0;
+   height: 0;
+    font-size:14px;
+    
+  
+}
+#main-menu .depth2>li>a{
+    color:#eeb365;
+   
+}
+.depth2>li{
+   border: 1px solid #eeb365;
+   border-top:none;
+ 
+  
+}
+#main-menu .depth1 li:hover .depth2{
+    /* display: block; */
+    opacity: 1;
+    height: auto;
+    
+}  
+#main-menu .depth2 li:hover a{
+    background: #eeb365;
+    color:#fff;
+   
+    
+  
+}
+#main-menu .depth1 li:hover .depth2{
+    background: #fff;
+    color:#eeb3b5;
+    transition: 0.5s; 
+}
+
+
+ /* visual */
+ #visual{
+     width: 100%;
+     position: relative;
+ }
+ #visual .slider img{
+     width: 100%;
+ }
+ #visual .text{
+     position: absolute;
+     left: 50%; top: 50%;
+     transform: translate(-50%, -50%);
+     color: #fff;
+     text-align: center;
+     line-height: 2.1em;
+ }
+ #visual .text h2{
+     font-size: 2em;
+ }
+ #visual .text p{
+     margin-bottom: 2em;
+     font-size: 1.2em;
+ }
+ #visual .text img{
+     width: 15vw;
+     margin-bottom: 0;
+ }
+ /* @media (max-width:910px){
+    #visual .text img{
+        width: 50%;
+        margin-bottom: 0;
+    }
+ } */
+ #visual .text a{
+     color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: 0.3s;
+ }
+ #visual .text a:hover{
+     background-color: #fff;
+     color: #333;
+ }
+
+
+ /* guide */
+ #guide .container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 7em;
+}
+#guide .container img{
+    width: 100%;
+}
+
+#guide .container p {
+    text-align: center;
+    margin-bottom: 4.5em;
+    line-height: 1.7;
+}
+
+#guide .container .box1 {
+    position: relative;
+    width: 32%;
+    height: 300px;
+    float: left;
+    margin-right: 2%;
+    /* background-color: #eee; */
+    margin-bottom: 0.8%;
+}
+
+#guide .container a > img{
+    transition: 0.5s;
+}
+#guide .container a:hover > img{
+    opacity: 0.3;
+}
+#guide .container a:hover > p{
+    color: #000;
+}
+
+#guide .container .box1 p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.1;
+    z-index: 99;
+}
+
+#guide .container .box1 p span {
+    font-size: 0.5em;
+}
+
+#guide .container .box1 img {
+    width: 100%;
+}
+
+
+#guide .container .box2 {
+    position: relative;
+    width: 49%;
+    height: 150px;
+    float: left;
+    margin-right: 2%;
+    background-color: #eee;
+    transition: 0.4s;
+}
+
+#guide .container .box2 p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.1;
+    z-index: 99;
+}
+
+#guide .container .box2 p span {
+    font-size: 0.5em;
+}
+
+#guide .container .box2 img {
+    width: 100%;
+}
+
+#guide .container .mg {
+    margin-right: 0;
+}
+
+
+ /* footer */
+ 
+.main-footer h2 img{
+    width:100px;
+ }
+ #footer{
+    clear: both;
+    padding: 50px 0;
+    margin-top: 100px;
+    background: #000;
+    text-align: center;
+    font-size: 14px;
+ }
+ #footer .container{
+    color:#ccc;
+ }
+ .main-footer{
+    margin-bottom: 10px;
+ }
+ .main-footer img{
+    background-color: #000;
+ }
+ .address p, .copy {
+    line-height: 2em;
+ }
+ 
+ #footer .main-footer a{
+     padding-right:10px;
+     padding-top: 10px;
+     text-decoration: none;
+     color:#ccc;
+ }
+#footer .copy{
+    font-size: 13px;
+}
+  
+
+/* sub01-1, sub01-2 통합 + sub01-1 about */
+#sub01 #intro, #sub01-2 #intro {
+    position: relative;
+}
+
+#sub01 #intro .sub-visul, #sub01-2 #intro .sub-visul {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/visual1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#sub01 #intro .sub-visul h1, #sub01-2 #intro .sub-visul h1 {
+    text-align: center;
+    position: absolute;
+    font-size: 26px;
+    font-weight: lighter;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    color: #fff;
+    line-height: 1.3em;
+}
+
+#sub01 #intro .sub-visul h1 span, #sub01-2 #intro .sub-visul h1 span {
+    font-size: 55px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: lighter;
+    letter-spacing: -3px;
+}
+
+#sub01 .about {
+    position: relative;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+#sub01 .about-intro {
+    width: 600px;
+    height: 700px;
+    border: 2px solid #eeb365;
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+#sub01 #intro .about-intro .logo{
+    width: 140px;
+}
+#sub01 #intro .about-intro .about-text{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sub01 #intro .about-intro h1 {
+    font-size: 3em;
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 0.5em;
+    font-weight: lighter;
+}
+
+#sub01 #intro .about-intro h2 {
+    line-height: 1.8em;
+    font-size: 17px;
+    font-family: 'Noto Serif KR', serif;
+    font-weight: lighter;
+    margin-bottom: 1.4em;
+}
+
+#sub01 #intro .about-intro p {
+    line-height: 1.7em;
+    font-size: 15px;
+}
+
+/* sub01-2 */
+#sub01-2 #intro .sub-visul h1 {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+}
+
+#sub01-2 #shops .container{
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+#sub01-2 #shops .container h1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    line-height: 2em;    
+    text-align: center;
+}
+#sub01-2 #shops .container h1 span{
+    font-size: 2em;
+    letter-spacing: -3px;
+    text-align: center;
+}
+
+#sub01-2 #shops .container .box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+#sub01-2 #shops .container .addr{
+    float: left;
+    margin-right: 3em;
+}
+#sub01-2 #shops .container .addr h2{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+#sub01-2 #shops .container .addr h2 span{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#sub01-2 #shops .container .tel{
+    float: left;
+    margin-bottom: 25px;
+}
+#sub01-2 #shops .container .tel h2{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+#sub01-2 #shops .container .tel h2 span{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#sub01-2 #shops .container .bus{
+    clear: both;
+    margin-top: 6em;
+}
+#sub01-2 #shops .container .bus h2 span{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* sub02, sub03 통합 */
+#sub02 #sub-banner, #sub03 #sub-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/visual2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#sub02 #sub-banner h1, #sub03 #sub-banner h1 {
+    text-align: center;
+    position: absolute;
+    font-size: 28px;
+    left: 50%;
+    bottom: 33%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-weight: lighter;
+    line-height: 1.6em;
+}
+
+#sub02 #sub-banner h1 span, #sub03 #sub-banner h1 span {
+    font-size: 55px;
+    letter-spacing: -3px;
+}
+
+#sub02 #line, #sub03 #line {
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+
+#sub02 #info, #sub03 #info {
+    margin-bottom: 12em;
+}
+#sub02 #info .container, #sub03 #info .container {
+    position: relative;
+}
+
+#sub02 #info .container .text, #sub03 #info .container .text {
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+#sub02 #info .container .text h1, #sub03 #info .container .text h1 {
+    font-size: 3em;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 1.em;
+}
+
+#sub02 #info .container .text h1>span, #sub03 #info .container .text h1>span {
+    font-size: 0.6em;
+}
+
+#sub02 #info .container .text p, #sub03 #info .container .text p {
+    margin-top: 3em;
+    line-height: 2;
+    font-size: 1em;
+}
+
+#sub02 #info .container .box, #sub03 #info .container .box {
+    width: 700px;
+    position: absolute;
+    right: 0; top: 0;
+}
+.bx-wrapper {
+    border: none;
+}
