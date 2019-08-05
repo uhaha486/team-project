@@ -16,8 +16,18 @@ a{
     min-width: 900px;
     max-width: 1200px;
     margin: 0 auto;
-    }
+}
 
+.bx-wrapper .bx-prev {
+    background: url('../images/slider1.png') no-repeat !important;
+    /* border: 1px solid red; */
+}
+.bx-wrapper .bx-next {
+    background: url('../images/slider2.png') no-repeat !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background: #eeb365;
+}
 
  /* header */
  header{
@@ -137,6 +147,8 @@ header .blog img{
      color: #fff;
      text-align: center;
      line-height: 2.1em;
+     opacity: 1;
+     z-index: 99;
  }
  #visual .text h2{
      font-size: 2em;

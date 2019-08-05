@@ -4,7 +4,7 @@ $(function(){
         mode: 'fade',
         auto: true,
         pause: 5000,
-        pager: false,
+        // pager: false,
         controls: false
     });
 });
