@@ -151,11 +151,11 @@ header .blog img{
      z-index: 99;
  }
  #visual .text h2{
-     font-size: 2em;
+     font-size: 2vw;
  }
  #visual .text p{
      margin-bottom: 2em;
-     font-size: 1.2em;
+     font-size: 1.2vw;
  }
  #visual .text img{
      width: 15vw;
@@ -168,12 +168,13 @@ header .blog img{
     }
  } */
  #visual .text a{
-     color: #fff;
+    color: #fff;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 10px 15px;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 0.8vw;
  }
  #visual .text a:hover{
      background-color: #fff;
@@ -333,6 +334,7 @@ header .blog img{
     transform: translateX(-50%);
     color: #fff;
     line-height: 1.3em;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #sub01 #intro .sub-visul h1 span, #sub01-2 #intro .sub-visul h1 span {
@@ -342,39 +344,75 @@ header .blog img{
     letter-spacing: -3px;
 }
 
-#sub01 .about {
+/* #sub01 .about {
     position: relative;
     margin-top: 150px;
     overflow: hidden;
-}
+    width: 50%;
+} */
 
 #sub01 .about-intro {
-    width: 600px;
+    width: 50%;
     height: 700px;
     border: 2px solid #eeb365;
     position: absolute;
     top: 150px;
     right: 0;
 }
-#sub01 #intro .about-intro .logo{
+
+.container .intro{
+    max-width: 120vw;
+    min-width: 70vw;
+    /* box-sizing: border-box; */
+    
+   
+   display: flex;
+   margin-bottom: 150px;
+ 
+   
+    
+}
+.about{
+    background-image: url(../images/about.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    max-height: 700px;
+    min-height: 400px;
+     margin-top: 150px;
+     flex:1;
+}
+
+#sub01 #intro .logo{
     width: 140px;
 }
-#sub01 #intro .about-intro .about-text{
+/* #sub01 #intro .about-text{
     width: 100%;
     text-align: center;
     position: absolute;
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
+} */
+
+#sub01 #intro  .about-text{
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    border: 2px solid  #eeb365;;
+    flex:1;
+    height: 700px;
+    padding-top: 100px;
+    
 }
 
-#sub01 #intro .about-intro h1 {
+#sub01 #intro h1 {
     font-size: 3em;
     font-family: 'Noto Serif KR', serif;
     margin-bottom: 0.5em;
     font-weight: lighter;
 }
 
-#sub01 #intro .about-intro h2 {
+#sub01 #intro h2 {
     line-height: 1.8em;
     font-size: 17px;
     font-family: 'Noto Serif KR', serif;
@@ -382,7 +420,7 @@ header .blog img{
     margin-bottom: 1.4em;
 }
 
-#sub01 #intro .about-intro p {
+#sub01 #intro p {
     line-height: 1.7em;
     font-size: 15px;
 }
@@ -487,6 +525,9 @@ header .blog img{
     margin-top: 100px;
     margin-bottom: 90px;
 }
+#sub02 #line img, #sub03 #line img{
+    width: 100%;
+}
 
 #sub02 #info, #sub03 #info {
     margin-bottom: 12em;
@@ -496,17 +537,17 @@ header .blog img{
 }
 
 #sub02 #info .container .text, #sub03 #info .container .text {
-    width: 450px;
+    max-width: 37%;
     height: 450px;
     padding: 10px;
-    margin-right: 40px;
+    margin-right: 5%;
 }
 
 #sub02 #info .container .text h1, #sub03 #info .container .text h1 {
-    font-size: 3em;
+    font-size: 2.3vw;
     line-height: 1.05;
     letter-spacing: -3px;
-    margin-bottom: 1.em;
+    margin-bottom: 1em;
 }
 
 #sub02 #info .container .text h1>span, #sub03 #info .container .text h1>span {
@@ -516,11 +557,11 @@ header .blog img{
 #sub02 #info .container .text p, #sub03 #info .container .text p {
     margin-top: 3em;
     line-height: 2;
-    font-size: 1em;
+    font-size: 0.88vw;
 }
 
 #sub02 #info .container .box, #sub03 #info .container .box {
-    width: 700px;
+    width: 58%;
     position: absolute;
     right: 0; top: 0;
 }
